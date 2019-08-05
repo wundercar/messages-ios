@@ -54,7 +54,7 @@ extension WUMessagesNotificationBanner: WUMessagesProtocol {
         }
         
         // Title
-        let title = message.attributedTitle
+        let title = message.attributedText
         
         // Banner
         let banner = StatusBarNotificationBanner(
