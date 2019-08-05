@@ -1,14 +1,16 @@
 import Foundation
 import UIKit
-import WUMessages
 
 protocol ExampleMessagesProtocol {
+    
+    typealias OnTap = () -> Void
+    
     // Banner
-    static func showBannerSuccess(message: WUMessage)
-    static func showBannerError(message: WUMessage)
-    static func showBannerWarning(message: WUMessage)
+    static func showBannerSuccess(title: String?, text: String?, onTap: OnTap?)
+    static func showBannerError(title: String?, text: String?, onTap: OnTap?)
+    static func showBannerWarning(title: String?, text: String?, onTap: OnTap?)
     // Notification
-    static func showNotification(message: WUMessage, image: UIImage?)
+    static func showNotification(title: String?, text: String?, image: UIImage?, onTap: OnTap?)
     // Status Bar Message
-    static func showStatusBarMessage(text: String)
+    static func showStatusBarMessage(text: String, onTap: OnTap?)
 }

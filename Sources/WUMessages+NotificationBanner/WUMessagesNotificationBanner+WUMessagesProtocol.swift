@@ -93,6 +93,7 @@ extension WUMessagesNotificationBanner: WUMessagesProtocol {
         // Subtitle
         let subtitle = message.attributedText
         
+        // Banner
         let banner = NotificationBanner(
             attributedTitle: title,
             attributedSubtitle: subtitle,

@@ -15,6 +15,9 @@ extension DispatchTimeInterval {
             result = Double(value) * 0.000000001
         case .never:
             result = nil
+            // swiftlint:disable:next switch_case_alignment
+            @unknown default:
+            fatalError()
         }
         
         return result

@@ -2,6 +2,7 @@ import Foundation
 import UIKit
 
 public protocol WUMessagesProtocol {
+    
     typealias OnTap = () -> Void
     
     static func showBanner(

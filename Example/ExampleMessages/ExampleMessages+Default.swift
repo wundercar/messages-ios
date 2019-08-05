@@ -3,70 +3,95 @@ import UIKit
 import WUMessages
 
 extension ExampleMessages: ExampleMessagesProtocol {
-    static func showBannerSuccess(message: WUMessage) {
-        var coloredMessage = message
-        coloredMessage.titleColor = .black
-        coloredMessage.textColor = .black
+    
+    static func showBannerSuccess(title: String?, text: String?, onTap: OnTap? = nil) {
+        
+        let message = WUMessage(
+            title: title,
+            titleColor: .black,
+            text: text,
+            textColor: .black)
         
         WUMessagesNotificationBanner.showBanner(
-            message: coloredMessage,
+            message: message,
             backgroundColor: .green,
             onTap: {
-                print("Success Banner: Tapped")
+                onTap?()
             },
             timeout: defaultTimeout
         )
     }
     
-    static func showBannerError(message: WUMessage) {
-        var coloredMessage = message
-        coloredMessage.titleColor = .white
-        coloredMessage.textColor = .white
+    static func showBannerError(title: String?, text: String?, onTap: OnTap? = nil) {
+        let message = WUMessage(
+            title: title,
+            titleColor: .white,
+            text: text,
+            textColor: .white
+        )
         
         WUMessagesNotificationBanner.showBanner(
-            message: coloredMessage,
+            message: message,
             backgroundColor: .red,
             onTap: {
-                print("Error Banner: Tapped")
+                onTap?()
             },
             timeout: defaultTimeout
         )
     }
     
-    static func showBannerWarning(message: WUMessage) {
-        var coloredMessage = message
-        coloredMessage.titleColor = .black
-        coloredMessage.textColor = .black
+    static func showBannerWarning(title: String?, text: String?, onTap: OnTap? = nil) {
+        let message = WUMessage(
+            title: title,
+            titleColor: .black,
+            text: text,
+            textColor: .black
+        )
         
         WUMessagesNotificationBanner.showBanner(
-            message: coloredMessage,
+            message: message,
             backgroundColor: .yellow,
             onTap: {
-                print("Warning Banner: Tapped")
+                onTap?()
             },
             timeout: defaultTimeout
         )
     }
     
-    static func showNotification(message: WUMessage, image: UIImage?) {
+    static func showNotification(title: String?, text: String?, image: UIImage?, onTap: OnTap?) {
+        
+        let message = WUMessage(
+            title: title,
+            titleColor: .white,
+            text: text,
+            textColor: .white
+        )
+        
         WUMessagesNotificationBanner.showNotification(
             message: message,
             image: image,
             backgroundColor: .lightGray,
             onTap: {
-                print("Notification: Tapped")
-            }, timeout: defaultTimeout
+                onTap?()
+            },
+            timeout: defaultTimeout
         )
     }
     
-    static func showStatusBarMessage(text: String) {
-        let message = WUMessage(text: text, textColor: .black)
+    static func showStatusBarMessage(text: String, onTap: OnTap?) {
+        
+        let message = WUMessage(
+            text: text,
+            textColor: .black
+        )
+        
         WUMessagesNotificationBanner.showStatusBarMessage(
             message: message,
             backgroundColor: .lightGray,
             onTap: {
-                print("Status Bar: Tapped")
-            }, timeout: defaultTimeout
+                onTap?()
+            },
+            timeout: defaultTimeout
         )
     }
 }

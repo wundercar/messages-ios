@@ -16,19 +16,21 @@ class ViewController: UIViewController {
 
 private extension ViewController {
     @IBAction func btBannerSuccessTap(_ sender: UIButton) {
-        let message = WUMessage(
+        ExampleMessages.showBannerSuccess(
             title: "This is the title",
-            text: "This is the text"
-        )
-        ExampleMessages.showBannerSuccess(message: message)
+            text: "This is the text",
+            onTap: {
+                print("Success Tapped")
+        })
     }
     
     @IBAction func btBannerErrorTap(_ sender: UIButton) {
-        let message = WUMessage(
+        ExampleMessages.showBannerError(
             title: "This is the title",
-            text: "This is the text"
-        )
-        ExampleMessages.showBannerError(message: message)
+            text: "This is the text",
+            onTap: {
+                print("Error Tapped")
+        })
     }
     
     @IBAction func btBannerWarningTap(_ sender: UIButton) {
@@ -36,22 +38,30 @@ private extension ViewController {
             title: "This is the title",
             text: "This is the text"
         )
-        ExampleMessages.showBannerWarning(message: message)
+        ExampleMessages.showBannerWarning(
+            title: "This is the title",
+            text: "This is the text",
+            onTap: {
+                print("Warning Tapped")
+        })
     }
     
     @IBAction func btNotificationTap(_ sender: UIButton) {
-        let message = WUMessage(
-            title: "This is the title",
-            text: "This is the text"
-        )
         let image = UIImage(named: "AppIcon")
-        ExampleMessages.showNotification(message: message, image: image)
+        ExampleMessages.showNotification(
+            title: "This is the title",
+            text: "This is the text",
+            image: image,
+            onTap: {
+                print("Notification Tapped")
+        })
     }
     
     @IBAction func btStatusBarTap(_ sender: UIButton) {
-        let text = "This is the title"
         ExampleMessages.showStatusBarMessage(
-            text: text
-        )
+            text: "This is the title",
+            onTap: {
+                print("Status Bar Tapped")
+        })
     }
 }
