@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10902D13DA0DAED4C48BEE22 /* Pods_WUMessages_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A06BB3FD895E44E6F56DB9 /* Pods_WUMessages_iOS.framework */; };
 		3D9C42A222745900000A6585 /* WUMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C42A122745900000A6585 /* WUMessages.swift */; };
 		3D9C42F62274604A000A6585 /* WUMessages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9C429022745894000A6585 /* WUMessages.framework */; };
 		3D9C42FC22746078000A6585 /* WUMessagesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C42D722745CDE000A6585 /* WUMessagesTests.swift */; };
@@ -14,8 +15,24 @@
 		3D9C43262274629B000A6585 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C43252274629B000A6585 /* ViewController.swift */; };
 		3D9C432B2274629C000A6585 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D9C432A2274629C000A6585 /* Assets.xcassets */; };
 		3D9C432E2274629C000A6585 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D9C432C2274629C000A6585 /* LaunchScreen.storyboard */; };
-		3D9C433422746323000A6585 /* WUMessages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9C429022745894000A6585 /* WUMessages.framework */; };
-		3D9C433522746323000A6585 /* WUMessages.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9C429022745894000A6585 /* WUMessages.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		991EE25709ED95A928595291 /* Pods_WUMessages_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21EDA322FA4D2F05F7EAF414 /* Pods_WUMessages_iOSTests.framework */; };
+		9C4CA685A3AB806268BD6F83 /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ED33010ACECCD2BDA7EE897 /* Pods_Example.framework */; };
+		CF59196822F195E100A739C1 /* ExampleMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF59196722F195E100A739C1 /* ExampleMessages.swift */; };
+		CF59197522F1C43300A739C1 /* WUMessagesProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF59196F22F1C40700A739C1 /* WUMessagesProtocol.swift */; };
+		CF59197622F1C43500A739C1 /* WUAlertsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF59197122F1C41800A739C1 /* WUAlertsProtocol.swift */; };
+		CF59197722F1C4A900A739C1 /* WUMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF59196522F1959500A739C1 /* WUMessage.swift */; };
+		CF59197822F1C4AB00A739C1 /* WUMessageSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF59196D22F1C3E600A739C1 /* WUMessageSource.swift */; };
+		CF59197922F1C4AE00A739C1 /* WUMessageAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF59196922F1C27F00A739C1 /* WUMessageAction.swift */; };
+		CF59197A22F1C4B200A739C1 /* WUTextFieldMessageAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF59196B22F1C33300A739C1 /* WUTextFieldMessageAction.swift */; };
+		CF59197D22F2E07000A739C1 /* WUMessages+NotificationBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF59197C22F2E07000A739C1 /* WUMessages+NotificationBanner.swift */; };
+		CF59198122F41D9E00A739C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF59198022F41D9E00A739C1 /* Main.storyboard */; };
+		CF59198722F4617900A739C1 /* WUMessages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9C429022745894000A6585 /* WUMessages.framework */; };
+		CF59198822F4617900A739C1 /* WUMessages.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9C429022745894000A6585 /* WUMessages.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CF59198E22F47BE100A739C1 /* ExampleMessagesProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF59198D22F47BE100A739C1 /* ExampleMessagesProtocol.swift */; };
+		CF59199022F47C5800A739C1 /* ExampleMessages+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF59198F22F47C5800A739C1 /* ExampleMessages+Default.swift */; };
+		CF59199322F81F7900A739C1 /* WUMessage+AttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF59199122F81F5E00A739C1 /* WUMessage+AttributedString.swift */; };
+		CF59199622F81FE000A739C1 /* DispatchTimeInterval+Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF59199422F81FC300A739C1 /* DispatchTimeInterval+Double.swift */; };
+		CF59199822F84E4000A739C1 /* WUMessagesNotificationBanner+WUMessagesProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF59199722F84E4000A739C1 /* WUMessagesNotificationBanner+WUMessagesProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,7 +43,7 @@
 			remoteGlobalIDString = 3D9C428F22745894000A6585;
 			remoteInfo = "WUMessages-iOS";
 		};
-		3D9C433622746323000A6585 /* PBXContainerItemProxy */ = {
+		CF59198922F4617900A739C1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3D9C428722745894000A6585 /* Project object */;
 			proxyType = 1;
@@ -36,13 +53,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		3D9C433822746323000A6585 /* Embed Frameworks */ = {
+		CF59198B22F4617A00A739C1 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				3D9C433522746323000A6585 /* WUMessages.framework in Embed Frameworks */,
+				CF59198822F4617900A739C1 /* WUMessages.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -50,6 +67,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		00A06BB3FD895E44E6F56DB9 /* Pods_WUMessages_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WUMessages_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		21EDA322FA4D2F05F7EAF414 /* Pods_WUMessages_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WUMessages_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D9C429022745894000A6585 /* WUMessages.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WUMessages.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D9C429C227458E8000A6585 /* WUMessages.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = WUMessages.plist; sourceTree = "<group>"; };
 		3D9C429D227458E8000A6585 /* WUMessagesTests.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = WUMessagesTests.plist; sourceTree = "<group>"; };
@@ -76,6 +95,32 @@
 		3D9C432A2274629C000A6585 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D9C432D2274629C000A6585 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D9C432F2274629C000A6585 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4ED33010ACECCD2BDA7EE897 /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57831E923136498C185A22F8 /* Pods-WUMessages-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WUMessages-iOSTests.debug.xcconfig"; path = "Target Support Files/Pods-WUMessages-iOSTests/Pods-WUMessages-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		63CD216DB467110B3B553D73 /* Pods-WUMessages-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WUMessages-iOS.debug.xcconfig"; path = "Target Support Files/Pods-WUMessages-iOS/Pods-WUMessages-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		760FE71EBE9E38C9B7DF4567 /* Pods-WUMessages-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WUMessages-iOSTests.release.xcconfig"; path = "Target Support Files/Pods-WUMessages-iOSTests/Pods-WUMessages-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		807923CF68C2DA500B99DACB /* Pods-WUMessages-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WUMessages-iOS.release.xcconfig"; path = "Target Support Files/Pods-WUMessages-iOS/Pods-WUMessages-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		9C6367A02D8C82B2537DA6B7 /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
+		A0E48D44C8DC845DD4BF8D3E /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
+		CF59196522F1959500A739C1 /* WUMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WUMessage.swift; sourceTree = "<group>"; };
+		CF59196722F195E100A739C1 /* ExampleMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleMessages.swift; sourceTree = "<group>"; };
+		CF59196922F1C27F00A739C1 /* WUMessageAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WUMessageAction.swift; sourceTree = "<group>"; };
+		CF59196B22F1C33300A739C1 /* WUTextFieldMessageAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WUTextFieldMessageAction.swift; sourceTree = "<group>"; };
+		CF59196D22F1C3E600A739C1 /* WUMessageSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WUMessageSource.swift; sourceTree = "<group>"; };
+		CF59196F22F1C40700A739C1 /* WUMessagesProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WUMessagesProtocol.swift; sourceTree = "<group>"; };
+		CF59197122F1C41800A739C1 /* WUAlertsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WUAlertsProtocol.swift; sourceTree = "<group>"; };
+		CF59197C22F2E07000A739C1 /* WUMessages+NotificationBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WUMessages+NotificationBanner.swift"; sourceTree = "<group>"; };
+		CF59197F22F33C5D00A739C1 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
+		CF59198022F41D9E00A739C1 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		CF59198222F4614800A739C1 /* MarqueeLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MarqueeLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF59198422F4615800A739C1 /* MarqueeLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MarqueeLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF59198D22F47BE100A739C1 /* ExampleMessagesProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleMessagesProtocol.swift; sourceTree = "<group>"; };
+		CF59198F22F47C5800A739C1 /* ExampleMessages+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExampleMessages+Default.swift"; sourceTree = "<group>"; };
+		CF59199122F81F5E00A739C1 /* WUMessage+AttributedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WUMessage+AttributedString.swift"; sourceTree = "<group>"; };
+		CF59199422F81FC300A739C1 /* DispatchTimeInterval+Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchTimeInterval+Double.swift"; sourceTree = "<group>"; };
+		CF59199722F84E4000A739C1 /* WUMessagesNotificationBanner+WUMessagesProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WUMessagesNotificationBanner+WUMessagesProtocol.swift"; sourceTree = "<group>"; };
+		CF59199922F84E8100A739C1 /* .swiftformat */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftformat; sourceTree = "<group>"; };
+		CF59199A22F84E8100A739C1 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +128,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10902D13DA0DAED4C48BEE22 /* Pods_WUMessages_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D9C42F62274604A000A6585 /* WUMessages.framework in Frameworks */,
+				991EE25709ED95A928595291 /* Pods_WUMessages_iOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,21 +145,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D9C433422746323000A6585 /* WUMessages.framework in Frameworks */,
+				CF59198722F4617900A739C1 /* WUMessages.framework in Frameworks */,
+				9C4CA685A3AB806268BD6F83 /* Pods_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A445B23DF6A01EF1E4571C0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				63CD216DB467110B3B553D73 /* Pods-WUMessages-iOS.debug.xcconfig */,
+				807923CF68C2DA500B99DACB /* Pods-WUMessages-iOS.release.xcconfig */,
+				57831E923136498C185A22F8 /* Pods-WUMessages-iOSTests.debug.xcconfig */,
+				760FE71EBE9E38C9B7DF4567 /* Pods-WUMessages-iOSTests.release.xcconfig */,
+				9C6367A02D8C82B2537DA6B7 /* Pods-Example.debug.xcconfig */,
+				A0E48D44C8DC845DD4BF8D3E /* Pods-Example.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		3D9C428622745894000A6585 = {
 			isa = PBXGroup;
 			children = (
+				CF59199922F84E8100A739C1 /* .swiftformat */,
+				CF59199A22F84E8100A739C1 /* .swiftlint.yml */,
+				CF59198422F4615800A739C1 /* MarqueeLabel.framework */,
 				3D9C42A0227458FA000A6585 /* Sources */,
 				3D9C42A32274595F000A6585 /* Tests */,
 				3D9C43222274629B000A6585 /* Example */,
 				3D9C429B227458E8000A6585 /* Configs */,
 				3D9C429122745894000A6585 /* Products */,
+				0A445B23DF6A01EF1E4571C0 /* Pods */,
+				77818C8FCB8C1301FCCF8B45 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,6 +203,7 @@
 				3D9C429C227458E8000A6585 /* WUMessages.plist */,
 				3D9C429D227458E8000A6585 /* WUMessagesTests.plist */,
 				3D9C42D422745B48000A6585 /* WUMessages.podspec */,
+				CF59197F22F33C5D00A739C1 /* Podfile */,
 				3D9C42D322745B48000A6585 /* Package.swift */,
 				3D9C42D222745B48000A6585 /* LICENSE */,
 				3D9C42D522745B48000A6585 /* README.md */,
@@ -152,6 +219,10 @@
 			isa = PBXGroup;
 			children = (
 				3D9C42A122745900000A6585 /* WUMessages.swift */,
+				CF59196F22F1C40700A739C1 /* WUMessagesProtocol.swift */,
+				CF59197B22F2DEAD00A739C1 /* WUMessages+NotificationBanner */,
+				CF59197122F1C41800A739C1 /* WUAlertsProtocol.swift */,
+				CF59197322F1C42B00A739C1 /* Models */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -169,7 +240,9 @@
 			isa = PBXGroup;
 			children = (
 				3D9C43232274629B000A6585 /* AppDelegate.swift */,
+				CF59198022F41D9E00A739C1 /* Main.storyboard */,
 				3D9C43252274629B000A6585 /* ViewController.swift */,
+				CF59198C22F47BD300A739C1 /* ExampleMessages */,
 				3D9C4333227462B9000A6585 /* Resources */,
 			);
 			path = Example;
@@ -183,6 +256,49 @@
 				3D9C432F2274629C000A6585 /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		77818C8FCB8C1301FCCF8B45 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF59198222F4614800A739C1 /* MarqueeLabel.framework */,
+				00A06BB3FD895E44E6F56DB9 /* Pods_WUMessages_iOS.framework */,
+				21EDA322FA4D2F05F7EAF414 /* Pods_WUMessages_iOSTests.framework */,
+				4ED33010ACECCD2BDA7EE897 /* Pods_Example.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF59197322F1C42B00A739C1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CF59196522F1959500A739C1 /* WUMessage.swift */,
+				CF59196D22F1C3E600A739C1 /* WUMessageSource.swift */,
+				CF59196922F1C27F00A739C1 /* WUMessageAction.swift */,
+				CF59196B22F1C33300A739C1 /* WUTextFieldMessageAction.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CF59197B22F2DEAD00A739C1 /* WUMessages+NotificationBanner */ = {
+			isa = PBXGroup;
+			children = (
+				CF59197C22F2E07000A739C1 /* WUMessages+NotificationBanner.swift */,
+				CF59199722F84E4000A739C1 /* WUMessagesNotificationBanner+WUMessagesProtocol.swift */,
+				CF59199422F81FC300A739C1 /* DispatchTimeInterval+Double.swift */,
+				CF59199122F81F5E00A739C1 /* WUMessage+AttributedString.swift */,
+			);
+			path = "WUMessages+NotificationBanner";
+			sourceTree = "<group>";
+		};
+		CF59198C22F47BD300A739C1 /* ExampleMessages */ = {
+			isa = PBXGroup;
+			children = (
+				CF59198D22F47BE100A739C1 /* ExampleMessagesProtocol.swift */,
+				CF59196722F195E100A739C1 /* ExampleMessages.swift */,
+				CF59198F22F47C5800A739C1 /* ExampleMessages+Default.swift */,
+			);
+			path = ExampleMessages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +318,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3D9C429822745894000A6585 /* Build configuration list for PBXNativeTarget "WUMessages-iOS" */;
 			buildPhases = (
+				92D06024A93B1C5963D969E3 /* [CP] Check Pods Manifest.lock */,
 				3D9C428B22745894000A6585 /* Headers */,
 				CF59196222F1829C00A739C1 /* Code Autoformatting */,
 				3D9C428C22745894000A6585 /* Sources */,
@@ -222,6 +339,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3D9C42F92274604A000A6585 /* Build configuration list for PBXNativeTarget "WUMessages-iOSTests" */;
 			buildPhases = (
+				9CA09A4E5E0F7AEAADA77D62 /* [CP] Check Pods Manifest.lock */,
 				CF59196422F1831300A739C1 /* Code Autoformatting */,
 				3D9C42ED2274604A000A6585 /* Sources */,
 				3D9C42EE2274604A000A6585 /* Frameworks */,
@@ -241,16 +359,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3D9C43302274629C000A6585 /* Build configuration list for PBXNativeTarget "Example" */;
 			buildPhases = (
+				C63AA1D3243672E8C152A1BE /* [CP] Check Pods Manifest.lock */,
 				CF59196322F182FC00A739C1 /* Code Autoformatting */,
 				3D9C431D2274629B000A6585 /* Sources */,
 				3D9C431E2274629B000A6585 /* Frameworks */,
 				3D9C431F2274629B000A6585 /* Resources */,
-				3D9C433822746323000A6585 /* Embed Frameworks */,
+				CF59198B22F4617A00A739C1 /* Embed Frameworks */,
+				FFCC653B53772B7D1E41C157 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				3D9C433722746323000A6585 /* PBXTargetDependency */,
+				CF59198A22F4617900A739C1 /* PBXTargetDependency */,
 			);
 			name = Example;
 			productName = Example;
@@ -318,6 +438,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF59198122F41D9E00A739C1 /* Main.storyboard in Resources */,
 				3D9C432E2274629C000A6585 /* LaunchScreen.storyboard in Resources */,
 				3D9C432B2274629C000A6585 /* Assets.xcassets in Resources */,
 			);
@@ -343,6 +464,72 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		92D06024A93B1C5963D969E3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WUMessages-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9CA09A4E5E0F7AEAADA77D62 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WUMessages-iOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C63AA1D3243672E8C152A1BE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 		CF59196222F1829C00A739C1 /* Code Autoformatting */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -398,6 +585,23 @@
 			shellPath = /bin/sh;
 			shellScript = "echo 'Autoformatting Code'\n\nscriptsPath=\"${SRCROOT}\"/Scripts\n\nformatMePath=\"$scriptsPath\"/formatMe.py\nconfigurationPath=\"${SRCROOT}\"/.swiftformat\n\nformatDestinationPath='./Tests'\n\necho \"Using script from: $formatMePath\"\necho \"Using configuration from: $configurationPath\"\n\n\"${formatMePath}\" --path \"${formatDestinationPath}\" --config \"${configurationPath}\"\n";
 		};
+		FFCC653B53772B7D1E41C157 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Example/Pods-Example-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Example/Pods-Example-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Example/Pods-Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -405,7 +609,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF59199822F84E4000A739C1 /* WUMessagesNotificationBanner+WUMessagesProtocol.swift in Sources */,
+				CF59199322F81F7900A739C1 /* WUMessage+AttributedString.swift in Sources */,
 				3D9C42A222745900000A6585 /* WUMessages.swift in Sources */,
+				CF59197522F1C43300A739C1 /* WUMessagesProtocol.swift in Sources */,
+				CF59197D22F2E07000A739C1 /* WUMessages+NotificationBanner.swift in Sources */,
+				CF59197622F1C43500A739C1 /* WUAlertsProtocol.swift in Sources */,
+				CF59197922F1C4AE00A739C1 /* WUMessageAction.swift in Sources */,
+				CF59199622F81FE000A739C1 /* DispatchTimeInterval+Double.swift in Sources */,
+				CF59197A22F1C4B200A739C1 /* WUTextFieldMessageAction.swift in Sources */,
+				CF59197822F1C4AB00A739C1 /* WUMessageSource.swift in Sources */,
+				CF59197722F1C4A900A739C1 /* WUMessage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,8 +635,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF59196822F195E100A739C1 /* ExampleMessages.swift in Sources */,
 				3D9C43262274629B000A6585 /* ViewController.swift in Sources */,
+				CF59199022F47C5800A739C1 /* ExampleMessages+Default.swift in Sources */,
 				3D9C43242274629B000A6585 /* AppDelegate.swift in Sources */,
+				CF59198E22F47BE100A739C1 /* ExampleMessagesProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,10 +651,10 @@
 			target = 3D9C428F22745894000A6585 /* WUMessages-iOS */;
 			targetProxy = 3D9C42F72274604A000A6585 /* PBXContainerItemProxy */;
 		};
-		3D9C433722746323000A6585 /* PBXTargetDependency */ = {
+		CF59198A22F4617900A739C1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 3D9C428F22745894000A6585 /* WUMessages-iOS */;
-			targetProxy = 3D9C433622746323000A6585 /* PBXContainerItemProxy */;
+			targetProxy = CF59198922F4617900A739C1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -581,8 +798,9 @@
 		};
 		3D9C429922745894000A6585 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63CD216DB467110B3B553D73 /* Pods-WUMessages-iOS.debug.xcconfig */;
 			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
@@ -593,7 +811,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Configs/WUMessages.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -611,8 +829,9 @@
 		};
 		3D9C429A22745894000A6585 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 807923CF68C2DA500B99DACB /* Pods-WUMessages-iOS.release.xcconfig */;
 			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
@@ -623,7 +842,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Configs/WUMessages.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -640,10 +859,11 @@
 		};
 		3D9C42FA2274604A000A6585 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57831E923136498C185A22F8 /* Pods-WUMessages-iOSTests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Configs/WUMessagesTests.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -658,10 +878,11 @@
 		};
 		3D9C42FB2274604A000A6585 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 760FE71EBE9E38C9B7DF4567 /* Pods-WUMessages-iOSTests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Configs/WUMessagesTests.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -676,13 +897,13 @@
 		};
 		3D9C43312274629C000A6585 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C6367A02D8C82B2537DA6B7 /* Pods-Example.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Example/Resources/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -697,13 +918,13 @@
 		};
 		3D9C43322274629C000A6585 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0E48D44C8DC845DD4BF8D3E /* Pods-Example.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Example/Resources/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

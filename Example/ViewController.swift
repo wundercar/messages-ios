@@ -1,33 +1,57 @@
 import UIKit
 import WUMessages
 
-// MARK: - ViewController
-
-/// The ViewController
 class ViewController: UIViewController {
     // MARK: Properties
     
-    /// The Label
-    lazy var label: UILabel = {
-        let label = UILabel()
-        label.text = "🚀\nWUMessages\nExample"
-        label.font = .systemFont(ofSize: 25, weight: .semibold)
-        label.numberOfLines = 0
-        label.lineBreakMode = .byWordWrapping
-        label.textAlignment = .center
-        return label
-    }()
+    // MARK: Life-cycle
     
-    // MARK: View-Lifecycle
-    
-    /// View did load
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .white
     }
+}
+
+// MARK: Private Methods
+
+private extension ViewController {
+    @IBAction func btBannerSuccessTap(_ sender: UIButton) {
+        let message = WUMessage(
+            title: "This is the title",
+            text: "This is the text"
+        )
+        ExampleMessages.showBannerSuccess(message: message)
+    }
     
-    /// LoadView
-    override func loadView() {
-        self.view = self.label
+    @IBAction func btBannerErrorTap(_ sender: UIButton) {
+        let message = WUMessage(
+            title: "This is the title",
+            text: "This is the text"
+        )
+        ExampleMessages.showBannerError(message: message)
+    }
+    
+    @IBAction func btBannerWarningTap(_ sender: UIButton) {
+        let message = WUMessage(
+            title: "This is the title",
+            text: "This is the text"
+        )
+        ExampleMessages.showBannerWarning(message: message)
+    }
+    
+    @IBAction func btNotificationTap(_ sender: UIButton) {
+        let message = WUMessage(
+            title: "This is the title",
+            text: "This is the text"
+        )
+        let image = UIImage(named: "AppIcon")
+        ExampleMessages.showNotification(message: message, image: image)
+    }
+    
+    @IBAction func btStatusBarTap(_ sender: UIButton) {
+        let text = "This is the title"
+        ExampleMessages.showStatusBarMessage(
+            text: text
+        )
     }
 }

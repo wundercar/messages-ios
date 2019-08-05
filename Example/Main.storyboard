@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zUr-x6-eWv">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="unv-IO-vzF">
+            <objects>
+                <viewController id="OuE-mV-Ej5" customClass="ViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qcg-Kz-D7S">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="luE-U8-WyO">
+                                <rect key="frame" x="0.0" y="88" width="414" height="211.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Banner" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wzT-Do-NZm">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="URK-5O-h57">
+                                        <rect key="frame" x="0.0" y="20.5" width="414" height="30"/>
+                                        <state key="normal" title="Success"/>
+                                        <connections>
+                                            <action selector="btBannerSuccessTap:" destination="OuE-mV-Ej5" eventType="touchUpInside" id="Keg-7Z-i7R"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RkH-94-eoY">
+                                        <rect key="frame" x="0.0" y="50.5" width="414" height="30"/>
+                                        <state key="normal" title="Error"/>
+                                        <connections>
+                                            <action selector="btBannerErrorTap:" destination="OuE-mV-Ej5" eventType="touchUpInside" id="OiJ-1d-ItP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zS0-5X-8jA">
+                                        <rect key="frame" x="0.0" y="80.5" width="414" height="30"/>
+                                        <state key="normal" title="Warning"/>
+                                        <connections>
+                                            <action selector="btBannerWarningTap:" destination="OuE-mV-Ej5" eventType="touchUpInside" id="a9R-SC-GCD"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notification" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ohs-kW-Atl">
+                                        <rect key="frame" x="0.0" y="110.5" width="414" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lSe-m3-rjz">
+                                        <rect key="frame" x="0.0" y="131" width="414" height="30"/>
+                                        <state key="normal" title="Notification"/>
+                                        <connections>
+                                            <action selector="btNotificationTap:" destination="OuE-mV-Ej5" eventType="touchUpInside" id="bKe-tz-1hw"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status Bar" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="30K-yc-yOq">
+                                        <rect key="frame" x="0.0" y="161" width="414" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g4v-0q-U7k">
+                                        <rect key="frame" x="0.0" y="181.5" width="414" height="30"/>
+                                        <state key="normal" title="Status Bar"/>
+                                        <connections>
+                                            <action selector="btStatusBarTap:" destination="OuE-mV-Ej5" eventType="touchUpInside" id="Jht-U3-kgS"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fvA-xB-v01" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="luE-U8-WyO" secondAttribute="bottom" id="16O-yy-vfr"/>
+                            <constraint firstItem="luE-U8-WyO" firstAttribute="top" secondItem="fvA-xB-v01" secondAttribute="top" id="Up3-lR-fNs"/>
+                            <constraint firstItem="fvA-xB-v01" firstAttribute="trailing" secondItem="luE-U8-WyO" secondAttribute="trailing" id="Whz-dz-fXn"/>
+                            <constraint firstItem="luE-U8-WyO" firstAttribute="leading" secondItem="fvA-xB-v01" secondAttribute="leading" id="goE-mA-CTe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fvA-xB-v01"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="C5Z-fm-pNR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xjr-nQ-LzV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="232" y="119"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="tsf-VJ-lTC">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yYc-IN-hdl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zUr-x6-eWv" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qy8-cR-ZmH">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="OuE-mV-Ej5" kind="relationship" relationship="rootViewController" id="3Z9-Kn-Jjd"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-678" y="119"/>
+        </scene>
+    </scenes>
+</document>
