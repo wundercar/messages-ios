@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
   s.name                      = "WUMessages"
   s.version                   = "1.0.0"
   s.summary                   = "WUMessages"
-  s.homepage                  = "https://github.com/VicenteCrespo/WUMessages"
+  s.homepage                  = "https://github.com/wundercar/messages-ios"
   s.license                   = { :type => "MIT", :file => "LICENSE" }
   s.author                    = { "Vicente Crespo" => "vicente.crespo@wundermobility.com" }
   s.source                    = { :git => "https://github.com/wundercar/messages-ios.git", :tag => s.version.to_s }

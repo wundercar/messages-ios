@@ -23,7 +23,7 @@
 # WUMessages
 
 <p align="center">
-ℹ️ Library to  abstract the usage for displaying messages in banners (notification like), in the status bar and also to abstract and ease the usage of alerts and action sheets.
+ℹ️ Library to  abstract the way of displaying messages in banners (notification like), in the status bar and also to abstract and ease the usage of alerts and action sheets.
 </p>
 
 ## Features
@@ -68,7 +68,7 @@ pod 'WUMessages'
 To integrate WUMessages into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "Vicente Crespo/WUMessages"
+github "wundercar/messages-ios"
 ```
 
 Run `carthage update` to build the framework and drag the built `WUMessages.framework` into your Xcode project.
@@ -81,7 +81,7 @@ To integrate using Apple's [Swift Package Manager](https://swift.org/package-man
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/VicenteCrespo/WUMessages.git", from: "1.0.0")
+    .package(url: "https://github.com/wundercar/messages-ios.git", from: "1.0.0")
 ]
 ```
 
