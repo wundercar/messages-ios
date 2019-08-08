@@ -28,7 +28,20 @@
 
 ## Features
 
-- [x] ℹ️ Add WUMessages features
+ℹ️ Abstract messages for:
+- [x] Banners
+- [x] Notifications
+- [x] Status Bar
+
+| Banners | Notifications  | Status Bar |
+| ------------- | ------------- | ------------- |
+| ![Basic Banners](Images/basic.gif)  | ![Banners with Side Views](Images/side_views.gif)  | ![Status Bar Banners](Images//status_bar.gif) |
+
+ℹ️ Abstract UIAlertViewController for:
+- [x] Alert - Information
+- [x] Alert - Confirmation
+- [x] Alert - Textfield
+- [x] Action Sheet
 
 ## Example
 
@@ -55,7 +68,7 @@ To integrate WUMessages into your Xcode project using Carthage, specify it in yo
 github "Vicente Crespo/WUMessages"
 ```
 
-Run `carthage update` to build the framework and drag the built `WUMessages.framework` into your Xcode project. 
+Run `carthage update` to build the framework and drag the built `WUMessages.framework` into your Xcode project.
 
 On your application targets’ “Build Phases” settings tab, click the “+” icon and choose “New Run Script Phase” and add the Framework path as mentioned in [Carthage Getting started Step 4, 5 and 6](https://github.com/Carthage/Carthage/blob/master/README.md#if-youre-building-for-ios-tvos-or-watchos)
 

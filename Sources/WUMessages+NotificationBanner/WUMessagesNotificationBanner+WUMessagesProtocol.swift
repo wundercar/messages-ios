@@ -2,6 +2,8 @@ import Foundation
 import NotificationBannerSwift
 import UIKit
 
+// MARK: - WUMessagesProtocol
+
 extension WUMessagesNotificationBanner: WUMessagesProtocol {
     
     public static func showBanner(

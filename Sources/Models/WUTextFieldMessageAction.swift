@@ -25,6 +25,11 @@ public struct WUTextFieldMessageAction {
 public extension WUTextFieldMessageAction {
     // swiftlint:disable:next identifier_name
     static var ok: WUTextFieldMessageAction {
-        return WUTextFieldMessageAction(title: "Ok", style: .default, handler: { _ in })
+        let result = WUTextFieldMessageAction(
+            title: "Ok",
+            style: .default,
+            handler: { _ in }
+        )
+        return result
     }
 }

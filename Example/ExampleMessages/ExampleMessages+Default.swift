@@ -2,9 +2,13 @@ import Foundation
 import UIKit
 import WUMessages
 
+/// Implementation of the project specific protocol for messages
 extension ExampleMessages: ExampleMessagesProtocol {
     
-    static func showBannerSuccess(title: String?, text: String?, onTap: OnTap? = nil) {
+    static func showBannerSuccess(
+        title: String?,
+        text: String?,
+        onTap: OnTap? = nil) {
         
         let message = WUMessage(
             title: title,
@@ -22,7 +26,10 @@ extension ExampleMessages: ExampleMessagesProtocol {
         )
     }
     
-    static func showBannerError(title: String?, text: String?, onTap: OnTap? = nil) {
+    static func showBannerError(
+        title: String?,
+        text: String?,
+        onTap: OnTap? = nil) {
         let message = WUMessage(
             title: title,
             titleColor: .white,
@@ -40,7 +47,10 @@ extension ExampleMessages: ExampleMessagesProtocol {
         )
     }
     
-    static func showBannerWarning(title: String?, text: String?, onTap: OnTap? = nil) {
+    static func showBannerWarning(
+        title: String?,
+        text: String?,
+        onTap: OnTap? = nil) {
         let message = WUMessage(
             title: title,
             titleColor: .black,
@@ -58,7 +68,11 @@ extension ExampleMessages: ExampleMessagesProtocol {
         )
     }
     
-    static func showNotification(title: String?, text: String?, image: UIImage?, onTap: OnTap?) {
+    static func showNotification(
+        title: String?,
+        text: String?,
+        image: UIImage?,
+        onTap: OnTap?) {
         
         let message = WUMessage(
             title: title,

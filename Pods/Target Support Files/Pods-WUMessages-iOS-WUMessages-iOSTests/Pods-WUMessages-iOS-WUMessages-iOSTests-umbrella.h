@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_WUMessages_iOSTestsVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_WUMessages_iOSTestsVersionString[];
+FOUNDATION_EXPORT double Pods_WUMessages_iOS_WUMessages_iOSTestsVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_WUMessages_iOS_WUMessages_iOSTestsVersionString[];
 

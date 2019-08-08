@@ -1,6 +1,8 @@
 import Foundation
 import UIKit
 
+/// Extension to style information in WUMessage
+/// through NSAttributedString
 extension WUMessage {
     
     var attributedTitle: NSAttributedString {
@@ -20,20 +22,21 @@ extension WUMessage {
     }
 }
 
+// MARK: - Private Utility Extension
+
 private extension NSAttributedString {
     
     convenience init(text: String, textColor: UIColor?) {
-        // No color, just return the string
-        guard let textColor = textColor else {
-            self.init(string: text)
-            return
+        
+        var attributes: [NSAttributedString.Key: Any] = [:]
+        
+        if let textColor = textColor {
+            attributes[.foregroundColor] = textColor
         }
-        // Include color
+        
         self.init(
             string: text,
-            attributes: [
-                .foregroundColor: textColor
-            ]
+            attributes: attributes
         )
     }
 }

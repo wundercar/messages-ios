@@ -6,7 +6,7 @@ PODS:
   - SnapKit (5.0.0)
 
 DEPENDENCIES:
-  - NotificationBannerSwift
+  - NotificationBannerSwift (= 2.5.1)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -19,6 +19,6 @@ SPEC CHECKSUMS:
   NotificationBannerSwift: e55dd801b0d78f1a7bacb10d722a935ec95f94a3
   SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
 
-PODFILE CHECKSUM: d253dfb0595722406e7ccaa645cbf63e25f4ffab
+PODFILE CHECKSUM: 3c7850346b5662141e47ccb7c23ad51bdf1db05b
 
 COCOAPODS: 1.7.5

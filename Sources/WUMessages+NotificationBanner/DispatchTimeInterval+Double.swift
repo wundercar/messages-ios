@@ -1,5 +1,6 @@
 import Foundation
 
+/// Extension to convert DispatchTimeInterval into Double
 extension DispatchTimeInterval {
     var double: Double? {
         var result: Double? = 0
@@ -15,8 +16,7 @@ extension DispatchTimeInterval {
             result = Double(value) * 0.000000001
         case .never:
             result = nil
-            // swiftlint:disable:next switch_case_alignment
-            @unknown default:
+        @unknown default:
             fatalError()
         }
         

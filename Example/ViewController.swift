@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     }
 }
 
-// MARK: Private Methods
+// MARK: Private Methods - Messages
 
 private extension ViewController {
     @IBAction func btBannerSuccessTap(_ sender: UIButton) {
@@ -34,10 +34,6 @@ private extension ViewController {
     }
     
     @IBAction func btBannerWarningTap(_ sender: UIButton) {
-        let message = WUMessage(
-            title: "This is the title",
-            text: "This is the text"
-        )
         ExampleMessages.showBannerWarning(
             title: "This is the title",
             text: "This is the text",
@@ -63,5 +59,120 @@ private extension ViewController {
             onTap: {
                 print("Status Bar Tapped")
         })
+    }
+}
+
+// MARK: - Alerts
+
+extension ViewController: WUAlertsDefault {}
+
+private extension ViewController {
+    
+    @IBAction func btAlertInformationTap(_ sender: UIButton) {
+        let message = WUMessage(
+            title: "This is the title",
+            text: "This is the text"
+        )
+        let acceptAction = WUMessageAction(
+            title: "Accept",
+            style: .default,
+            handler: {
+                print("Accept Tap")
+        })
+        
+        self.showInformation(message: message, accept: acceptAction)
+    }
+    
+    @IBAction func btAlertConfirmationTap(_ sender: UIButton) {
+        let message = WUMessage(
+            title: "This is the title",
+            text: "This is the text"
+        )
+        let acceptAction = WUMessageAction(
+            title: "Accept",
+            style: .default,
+            handler: {
+                print("Accept Tap")
+        })
+        
+        let cancelAction = WUMessageAction(
+            title: "Cancel",
+            style: .cancel,
+            handler: {
+                print("Cancel Tap")
+        })
+        
+        self.showConfirmation(
+            message: message,
+            accept: acceptAction,
+            cancel: cancelAction
+        )
+    }
+    
+    @IBAction func btAlertTextfieldTap(_ sender: UIButton) {
+        let message = WUMessage(
+            title: "This is the title",
+            text: "This is the text"
+        )
+        let acceptAction = WUTextFieldMessageAction(
+            title: "Accept",
+            style: .default,
+            handler: { textfieldValue in
+                print("Accept Tap with: '\(textfieldValue ?? "-")'")
+        })
+        
+        let cancelAction = WUMessageAction(
+            title: "Cancel",
+            style: .cancel,
+            handler: {
+                print("Cancel Tap")
+        })
+        
+        self.showAlertTextField(
+            message: message,
+            fieldPlaceHolder: "My Placeholder",
+            fieldText: "Initial Value",
+            accept: acceptAction,
+            cancel: cancelAction
+        )
+    }
+    
+    @IBAction func btActionSheetTap(_ sender: UIButton) {
+        
+        let message = WUMessage(
+            title: "This is the title",
+            text: "This is the text"
+        )
+        
+        let acceptAction = WUMessageAction(
+            title: "Accept",
+            style: .default,
+            handler: {
+                print("Accept Tap")
+        })
+        
+        let deleteAction = WUMessageAction(
+            title: "Delete",
+            style: .destructive,
+            handler: {
+                print("Delete Tap")
+        })
+        
+        let cancelAction = WUMessageAction(
+            title: "Cancel",
+            style: .cancel,
+            handler: {
+                print("Cancel Tap")
+        })
+        
+        self.showActionSheet(
+            message: message,
+            options: [
+                acceptAction,
+                deleteAction,
+                cancelAction
+            ],
+            source: .view(sender, rect: sender.bounds)
+        )
     }
 }

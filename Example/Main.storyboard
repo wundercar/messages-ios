@@ -76,12 +76,60 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="E7Y-5x-SL4">
+                                <rect key="frame" x="0.0" y="319.5" width="414" height="161"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alerts" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qua-Tq-gp4">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kye-IW-GJa">
+                                        <rect key="frame" x="0.0" y="20.5" width="414" height="30"/>
+                                        <state key="normal" title="Information"/>
+                                        <connections>
+                                            <action selector="btAlertInformationTap:" destination="OuE-mV-Ej5" eventType="touchUpInside" id="hj5-mM-GiS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0XN-kZ-VfH">
+                                        <rect key="frame" x="0.0" y="50.5" width="414" height="30"/>
+                                        <state key="normal" title="Confirmation"/>
+                                        <connections>
+                                            <action selector="btAlertConfirmationTap:" destination="OuE-mV-Ej5" eventType="touchUpInside" id="nN5-WF-Z3Q"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Flo-Vg-VDl">
+                                        <rect key="frame" x="0.0" y="80.5" width="414" height="30"/>
+                                        <state key="normal" title="Textfield"/>
+                                        <connections>
+                                            <action selector="btAlertTextfieldTap:" destination="OuE-mV-Ej5" eventType="touchUpInside" id="kbN-pU-dOw"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Action Sheet" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YZK-ih-0nn">
+                                        <rect key="frame" x="0.0" y="110.5" width="414" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DeX-lo-qIK">
+                                        <rect key="frame" x="0.0" y="131" width="414" height="30"/>
+                                        <state key="normal" title="Action Sheet"/>
+                                        <connections>
+                                            <action selector="btActionSheetTap:" destination="OuE-mV-Ej5" eventType="touchUpInside" id="W7c-nU-ZuE"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="fvA-xB-v01" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="luE-U8-WyO" secondAttribute="bottom" id="16O-yy-vfr"/>
+                            <constraint firstItem="E7Y-5x-SL4" firstAttribute="top" secondItem="luE-U8-WyO" secondAttribute="bottom" constant="20" id="BI2-T4-Fks"/>
                             <constraint firstItem="luE-U8-WyO" firstAttribute="top" secondItem="fvA-xB-v01" secondAttribute="top" id="Up3-lR-fNs"/>
                             <constraint firstItem="fvA-xB-v01" firstAttribute="trailing" secondItem="luE-U8-WyO" secondAttribute="trailing" id="Whz-dz-fXn"/>
+                            <constraint firstItem="fvA-xB-v01" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="E7Y-5x-SL4" secondAttribute="bottom" id="Yxg-Ez-oDm"/>
+                            <constraint firstItem="fvA-xB-v01" firstAttribute="trailing" secondItem="E7Y-5x-SL4" secondAttribute="trailing" id="aY8-Xn-E3h"/>
+                            <constraint firstItem="E7Y-5x-SL4" firstAttribute="leading" secondItem="fvA-xB-v01" secondAttribute="leading" id="d7J-XP-HTm"/>
                             <constraint firstItem="luE-U8-WyO" firstAttribute="leading" secondItem="fvA-xB-v01" secondAttribute="leading" id="goE-mA-CTe"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fvA-xB-v01"/>

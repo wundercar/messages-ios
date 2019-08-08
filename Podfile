@@ -21,9 +21,11 @@ target 'WUMessages-iOS' do
   app_pods
   
   target 'WUMessages-iOSTests' do
-    inherit! :search_paths
+    app_pods
+#inherit! :search_paths
 
   end
+
 end
 
 # Example Target

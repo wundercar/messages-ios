@@ -1,6 +1,7 @@
 import Foundation
 import UIKit
 
+/// Protocol specific to the project that will use WUMessages below
 protocol ExampleMessagesProtocol {
     
     typealias OnTap = () -> Void
