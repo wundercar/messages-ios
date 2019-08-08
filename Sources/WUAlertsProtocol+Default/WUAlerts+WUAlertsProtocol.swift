@@ -109,6 +109,9 @@ private extension WUAlertsDefault where Self: UIViewController {
         
         setup?(alertController)
         
+        // In an iPhone, this will throw an autolayout error in iOS:
+        // 12.2, 12.3, 12.4, 13 beta
+        // http://openradar.appspot.com/49289931
         self.present(alertController, animated: true, completion: nil)
     }
 }
