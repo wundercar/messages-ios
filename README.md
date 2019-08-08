@@ -16,32 +16,35 @@
       <img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage Compatible">
    </a>
    <a href="https://github.com/apple/swift-package-manager">
-      <img src="https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg" alt="SPM">
+      <img src="https://img.shields.io/badge/Swift%20Package%20Manager-c˚ompatible-brightgreen.svg" alt="SPM">
    </a>
 </p>
 
 # WUMessages
 
 <p align="center">
-ℹ️ Short description of WUMessages
+ℹ️ Library to  abstract the usage for displaying messages in banners (notification like), in the status bar and also to abstract and ease the usage of alerts and action sheets.
 </p>
 
 ## Features
 
-ℹ️ Abstract messages for:
-- [x] Banners
-- [x] Notifications
-- [x] Status Bar
+ℹ️ Abstract messages + Concrete implementation with <a href="https://github.com/Daltron/NotificationBanner"
+     alt="NotificationBannerSwift">Notification Banner</a>:
 
 | Banners | Notifications  | Status Bar |
 | ------------- | ------------- | ------------- |
-| ![Basic Banners](Images/basic.gif)  | ![Banners with Side Views](Images/side_views.gif)  | ![Status Bar Banners](Images//status_bar.gif) |
+| ![Basic Banners](Images/basic.gif)  | ![Banners with Side Views](Images/side_views.gif)  | ![Status Bar Banners](Images/status_bar.gif) |
 
-ℹ️ Abstract UIAlertViewController for:
-- [x] Alert - Information
-- [x] Alert - Confirmation
-- [x] Alert - Textfield
-- [x] Action Sheet
+ℹ️ Abstract UIAlertViewController + Concrete system implementation:
+
+| Information | Confirmation  | Text Field |
+| ------------- | ------------- | ------------- |
+| ![Information](Images/information.png)  | ![Confirmation](Images/confirmation.png)  | ![Text Field](Images/textfield.png) |
+
+| Action Sheet (iPhone) | Action Sheet (iPad) |
+| ------------- | ------------- |
+| ![Information](Images/action_sheet_iphone.png)  | ![Confirmation](Images/action_sheet_ipad.png) |
+
 
 ## Example
 
@@ -85,10 +88,6 @@ dependencies: [
 ### Manually
 
 If you prefer not to use any of the aforementioned dependency managers, you can integrate WUMessages into your project manually. Simply drag the `Sources` Folder into your Xcode project.
-
-## Usage
-
-ℹ️ Describe the usage of your Kit
 
 ## Contributing
 Contributions are very welcome 🙌
