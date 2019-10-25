@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                      = "WUMessages"
-  s.version                   = "1.0.0"
+  s.version                   = "1.1.0"
   s.summary                   = "WUMessages"
   s.homepage                  = "https://github.com/wundercar/messages-ios"
   s.license                   = { :type => "MIT", :file => "LICENSE" }
@@ -13,6 +13,6 @@ Pod::Spec.new do |s|
   s.swift_version             = '5.0'
   s.source_files              = "Sources/**/*"
   s.frameworks                = "Foundation"
-  s.dependency 'NotificationBannerSwift', '2.5.1'
+  s.dependency 'NotificationBannerSwift', '3.0.0'
 
 end
