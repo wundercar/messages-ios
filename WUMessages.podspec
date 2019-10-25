@@ -13,6 +13,6 @@ Pod::Spec.new do |s|
   s.swift_version             = '5.0'
   s.source_files              = "Sources/**/*"
   s.frameworks                = "Foundation"
-  s.dependency 'NotificationBannerSwift', '2.5.1'
+  s.dependency 'NotificationBannerSwift', '3.0.0'
 
 end
