@@ -5,11 +5,13 @@ public protocol WUMessagesProtocol {
     
     typealias OnTap = () -> Void
     
-    /// Shows a notification look alike banner, without image
+    /// Shows a notification look alike banner, including images if needed
     static func showBanner(
         message: WUMessage,
         backgroundColor: UIColor?,
         onTap: OnTap?,
+        leftIcon: UIImage?,
+        rightIcon: UIImage?,
         timeout: DispatchTimeInterval
     )
     
