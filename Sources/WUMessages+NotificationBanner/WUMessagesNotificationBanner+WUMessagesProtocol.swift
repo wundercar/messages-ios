@@ -13,10 +13,10 @@ extension WUMessagesNotificationBanner: WUMessagesProtocol {
                                   timeout: DispatchTimeInterval) {
         
         // Title
-        let title = message.attributedTitle
+        let title = message.customAttributedTitle ?? message.attributedTitle
         
         // Subtitle
-        let subtitle = message.attributedText
+        let subtitle = message.customAttributedText ?? message.attributedText
         
         // Left icon
         var leftIconView: UIImageView!
@@ -68,7 +68,7 @@ extension WUMessagesNotificationBanner: WUMessagesProtocol {
         }
         
         // Title
-        let title = message.attributedText
+        let title = message.customAttributedText ?? message.attributedText
         
         // Banner
         let banner = StatusBarNotificationBanner(
@@ -102,10 +102,10 @@ extension WUMessagesNotificationBanner: WUMessagesProtocol {
         timeout: DispatchTimeInterval) {
         
         // Title
-        let title = message.attributedTitle
+        let title = message.customAttributedTitle ?? message.attributedTitle
         
         // Subtitle
-        let subtitle = message.attributedText
+        let subtitle = message.customAttributedText ?? message.attributedText
         
         // Banner
         let banner = NotificationBanner(
