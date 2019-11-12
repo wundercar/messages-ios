@@ -5,12 +5,12 @@ import UIKit
 // MARK: - WUMessagesProtocol
 
 extension WUMessagesNotificationBanner: WUMessagesProtocol {
-    
-    public static func showBanner(
-        message: WUMessage,
-        backgroundColor: UIColor?,
-        onTap: OnTap?,
-        timeout: DispatchTimeInterval) {
+    public static func showBanner(message: WUMessage,
+                                  backgroundColor: UIColor?,
+                                  onTap: OnTap?,
+                                  leftIcon: UIImage?,
+                                  rightIcon: UIImage?,
+                                  timeout: DispatchTimeInterval) {
         
         // Title
         let title = message.attributedTitle
@@ -18,12 +18,24 @@ extension WUMessagesNotificationBanner: WUMessagesProtocol {
         // Subtitle
         let subtitle = message.attributedText
         
+        // Left icon
+        var leftIconView: UIImageView!
+        if let leftIcon = leftIcon {
+            leftIconView = UIImageView(image: leftIcon)
+        }
+        
+        // Right icon
+        var rightIconView: UIImageView!
+        if let rightIcon = rightIcon {
+            rightIconView = UIImageView(image: rightIcon)
+        }
+        
         // Banner
         let banner = NotificationBanner(
             attributedTitle: title,
             attributedSubtitle: subtitle,
-            leftView: nil,
-            rightView: nil,
+            leftView: leftIconView,
+            rightView: rightIconView,
             style: .info, // Can't be custom, to use background color afterwards
             colors: nil
         )
