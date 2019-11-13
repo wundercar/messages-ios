@@ -24,8 +24,8 @@ public struct WUMessage {
         customAttributedTitle: NSAttributedString? = nil,
         customAttributedText: NSAttributedString? = nil) {
         
-        if title == nil, text == nil {
-            assertionFailure("At least text or title should be defined")
+        if title == nil, text == nil, customAttributedTitle == nil, customAttributedText == nil {
+            assertionFailure("At least one of the text parameters should be defined")
         }
         
         self.title = title
