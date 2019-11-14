@@ -1,14 +1,23 @@
+import RxSwift
 import UIKit
 import WUMessages
 
 class ViewController: UIViewController {
+    
     // MARK: Properties
+    
+    private let disposeBag = DisposeBag()
     
     // MARK: Life-cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .white
+        
+        WUMessagesNotificationBanner.trackBannerVisibility()
+            .subscribe { isVisible in
+                print("Banner is visible: " + isVisible.element!.description)
+            }.disposed(by: disposeBag)
     }
 }
 
