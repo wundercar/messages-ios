@@ -1,10 +1,20 @@
 import Foundation
 import NotificationBannerSwift
+import RxCocoa
+import RxSwift
 import UIKit
 
 // MARK: - WUMessagesProtocol
 
 extension WUMessagesNotificationBanner: WUMessagesProtocol {
+    
+    private static let bannerVisibility = BehaviorRelay<Bool>(value: false)
+    private static let visibilityDelegate = WUMessagesNotificationBannerVisibility(visibilityRelay: WUMessagesNotificationBanner.bannerVisibility)
+    
+    public static func trackBannerVisibility() -> Observable<Bool> {
+        return WUMessagesNotificationBanner.bannerVisibility.asObservable()
+    }
+    
     public static func showBanner(message: WUMessage,
                                   backgroundColor: UIColor?,
                                   onTap: OnTap?,
@@ -52,6 +62,9 @@ extension WUMessagesNotificationBanner: WUMessagesProtocol {
         banner.onTap = {
             onTap?()
         }
+        
+        // Assign visibility delegate instance to propagate signals
+        banner.delegate = visibilityDelegate
         
         // Display
         banner.show()
@@ -130,7 +143,39 @@ extension WUMessagesNotificationBanner: WUMessagesProtocol {
             onTap?()
         }
         
+        // Assign visibility delegate instance to propagate signals
+        banner.delegate = visibilityDelegate
+        
         // Display
         banner.show()
     }
+}
+
+// MARK: - NotificationBannerDelegate
+
+private class WUMessagesNotificationBannerVisibility: NotificationBannerDelegate {
+    
+    // MARK: - Properties
+    
+    let bannerVisibility: BehaviorRelay<Bool>
+    
+    // MARK: - Life cycle
+    
+    init(visibilityRelay: BehaviorRelay<Bool>) {
+        bannerVisibility = visibilityRelay
+    }
+    
+    // MARK: - Conformance
+    
+    public func notificationBannerWillAppear(_ banner: BaseNotificationBanner) {
+        bannerVisibility.accept(true)
+    }
+    
+    public func notificationBannerWillDisappear(_ banner: BaseNotificationBanner) {
+        bannerVisibility.accept(false)
+    }
+    
+    public func notificationBannerDidAppear(_ banner: BaseNotificationBanner) {}
+    
+    public func notificationBannerDidDisappear(_ banner: BaseNotificationBanner) {}
 }
