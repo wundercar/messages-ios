@@ -11,7 +11,9 @@ public protocol WUMessagesProtocol {
         backgroundColor: UIColor?,
         onTap: OnTap?,
         leftIcon: UIImage?,
+        leftIconColor: UIColor?,
         rightIcon: UIImage?,
+        rightIconColor: UIColor?,
         timeout: DispatchTimeInterval
     )
     
