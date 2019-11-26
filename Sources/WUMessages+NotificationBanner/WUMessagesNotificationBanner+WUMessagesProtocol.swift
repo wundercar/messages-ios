@@ -23,20 +23,22 @@ extension WUMessagesNotificationBanner: WUMessagesProtocol {
         // Left icon
         var leftIconView: UIImageView!
         if let leftIcon = leftIcon {
-            leftIconView = UIImageView(image: leftIcon.withRenderingMode(.alwaysTemplate))
-            
             if let leftIconColor = leftIconColor {
+                leftIconView = UIImageView(image: leftIcon.withRenderingMode(.alwaysTemplate))
                 leftIconView.tintColor = leftIconColor
+            } else {
+                leftIconView = UIImageView(image: leftIcon)
             }
         }
         
         // Right icon
         var rightIconView: UIImageView!
         if let rightIcon = rightIcon {
-            rightIconView = UIImageView(image: rightIcon.withRenderingMode(.alwaysTemplate))
-            
             if let rightIconColor = rightIconColor {
+                rightIconView = UIImageView(image: rightIcon.withRenderingMode(.alwaysTemplate))
                 rightIconView.tintColor = rightIconColor
+            } else {
+                rightIconView = UIImageView(image: rightIcon)
             }
         }
         
