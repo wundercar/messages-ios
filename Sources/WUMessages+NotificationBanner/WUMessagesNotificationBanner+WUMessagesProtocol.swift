@@ -8,8 +8,10 @@ extension WUMessagesNotificationBanner: WUMessagesProtocol {
     public static func showBanner(message: WUMessage,
                                   backgroundColor: UIColor?,
                                   onTap: OnTap?,
-                                  leftIcon: UIImage?,
-                                  rightIcon: UIImage?,
+                                  leftIcon: UIImage? = nil,
+                                  leftIconColor: UIColor? = nil,
+                                  rightIcon: UIImage? = nil,
+                                  rightIconColor: UIColor? = nil,
                                   timeout: DispatchTimeInterval) {
         
         // Title
@@ -21,13 +23,23 @@ extension WUMessagesNotificationBanner: WUMessagesProtocol {
         // Left icon
         var leftIconView: UIImageView!
         if let leftIcon = leftIcon {
-            leftIconView = UIImageView(image: leftIcon)
+            if let leftIconColor = leftIconColor {
+                leftIconView = UIImageView(image: leftIcon.withRenderingMode(.alwaysTemplate))
+                leftIconView.tintColor = leftIconColor
+            } else {
+                leftIconView = UIImageView(image: leftIcon)
+            }
         }
         
         // Right icon
         var rightIconView: UIImageView!
         if let rightIcon = rightIcon {
-            rightIconView = UIImageView(image: rightIcon)
+            if let rightIconColor = rightIconColor {
+                rightIconView = UIImageView(image: rightIcon.withRenderingMode(.alwaysTemplate))
+                rightIconView.tintColor = rightIconColor
+            } else {
+                rightIconView = UIImageView(image: rightIcon)
+            }
         }
         
         // Banner
