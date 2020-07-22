@@ -12,6 +12,8 @@ ENV['COCOAPODS_DISABLE_STATS'] = 'true'
 
 def app_pods
   pod 'NotificationBannerSwift', '2.5.1'
+  pod 'RxCocoa',  git: 'https://github.com/ReactiveX/RxSwift'
+  pod 'RxSwift',  git: 'https://github.com/ReactiveX/RxSwift'
 end
 
 # Framework target

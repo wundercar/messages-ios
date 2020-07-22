@@ -19,9 +19,8 @@ extension ExampleMessages: ExampleMessagesProtocol {
         WUMessagesNotificationBanner.showBanner(
             message: message,
             backgroundColor: .green,
-            onTap: {
-                onTap?()
-            },
+            onTap: onTap,
+            leftIcon: nil, rightIcon: nil,
             timeout: defaultTimeout
         )
     }
@@ -40,9 +39,8 @@ extension ExampleMessages: ExampleMessagesProtocol {
         WUMessagesNotificationBanner.showBanner(
             message: message,
             backgroundColor: .red,
-            onTap: {
-                onTap?()
-            },
+            onTap: onTap,
+            leftIcon: nil, rightIcon: nil,
             timeout: defaultTimeout
         )
     }
@@ -61,9 +59,9 @@ extension ExampleMessages: ExampleMessagesProtocol {
         WUMessagesNotificationBanner.showBanner(
             message: message,
             backgroundColor: .yellow,
-            onTap: {
-                onTap?()
-            },
+            onTap: onTap,
+            leftIcon: nil,
+            rightIcon: nil,
             timeout: defaultTimeout
         )
     }
@@ -85,9 +83,7 @@ extension ExampleMessages: ExampleMessagesProtocol {
             message: message,
             image: image,
             backgroundColor: .lightGray,
-            onTap: {
-                onTap?()
-            },
+            onTap: onTap,
             timeout: defaultTimeout
         )
     }
@@ -102,9 +98,7 @@ extension ExampleMessages: ExampleMessagesProtocol {
         WUMessagesNotificationBanner.showStatusBarMessage(
             message: message,
             backgroundColor: .lightGray,
-            onTap: {
-                onTap?()
-            },
+            onTap: onTap,
             timeout: defaultTimeout
         )
     }
