@@ -11,7 +11,7 @@ ENV['COCOAPODS_DISABLE_STATS'] = 'true'
 # Project libraries
 
 def app_pods
-  pod 'NotificationBannerSwift', '2.5.1'
+  pod 'NotificationBannerSwift', '3.0.2'
 end
 
 # Framework target
